@@ -1,0 +1,150 @@
+.productPage {
+    background-color: #F2F2F2;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.productPageWrapper{
+    width: 70%;
+}
+.productDetail {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 20px 0px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.productDleft {
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productDleft img{
+    object-fit: contain;
+    height: 300px;
+}
+.productDright {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px;
+}
+.productDright *{
+    text-align: left;
+}
+.productDright span {
+    color: grey;
+    font-size: 17px;
+}
+.productDright h2 {
+    margin: 5px 0px;
+}
+.productDright h3 {
+    font-weight: 500;
+}
+.prodActionDiv{
+    display: flex;
+}
+.addBagBtn{
+    border: none;
+    outline: none;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #fe8f46;
+    color: white;
+}
+.buyBtn {
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+}
+.reviewLoadingDiv {
+    display: flex;
+    justify-content: center;
+}
+
+/* Comment section */
+.productReview {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+}
+.productReview *{
+    text-align: left;
+}
+.productReview h3{
+    font-weight: 500;
+}
+.productReview hr{
+    width: 100%;
+    color: grey;
+}
+
+/* Review card */
+.reviewCard hr{
+    color: grey;
+}
+.rcWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.rcLeft h3{
+    margin: 5px 0px;
+    padding: 0;
+    font-size: 18px;
+}
+.rcLeft p{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+.rcLeft span{
+    font-size: 14px;
+    color: grey;
+}
+.rcRight {
+    display: flex;
+    align-items: center;
+}
+.rcRight svg{
+    height: 27px;
+    width: 27px;
+    margin-right: 20px;
+    color: #35919b;
+}
+.rcDate {
+    display: flex;
+    align-items: center;
+    color: grey;
+    margin: 5px 0px;
+}
+.rcDate svg{
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}

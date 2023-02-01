@@ -1,0 +1,226 @@
+.userDashRightTop h2{
+    text-align: left;
+    color: #35919b;
+}
+
+/* User Profile */
+
+.userProfileDiv {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.personalInfo {
+    padding: 20px;
+    text-align: left;
+}
+.infoDiv{
+    display: flex;
+    margin-left: 30px;
+}
+.infoProp{
+    width: 30%;
+}
+.infoValue{
+    width: 70%;
+}
+
+
+/* User Cart */
+.cartitem{
+    margin: 10px 2px;
+    background-color: white;
+    border-radius: 12px;
+}
+.cartitemWrapper{
+    padding: 10px;
+    display: flex;
+}
+
+.cartHeader{
+    display: flex;
+}
+.chleft{
+    flex: 0.7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.removeCart{
+    cursor: pointer;
+}
+.secDiv{
+    flex: 0.3;
+    display: flex;
+}
+.chmid{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chright{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartItemSpinner{
+    padding: 8px;
+}
+
+.cartHeaderImg{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+.headerText{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    align-items: flex-start;
+}
+.quantityDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+.headerText h4{
+    margin: 4px 0px;
+    padding: 0;
+    font-size: 18px;
+    text-align: left;
+}
+.ciPrice{
+    font-weight: 500;
+    font-size: 16px;
+}
+.removeCart{
+    color: red;
+}
+.idTest{
+    height: 10px;
+    font-size: 17px;
+    padding: 10px;
+}
+.idButton{
+    height: 30px;
+    width: 30px;
+    background-color: deeppink;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.footer{
+    float: right;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer b{
+    text-align: end;
+    padding-right: 40px;
+}
+
+/* Modal Popup */
+.removeProduct{
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: red;
+    padding: 0px;
+}
+.ckButton{
+    background-color: #42b72a;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    height: 40px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* User orders */
+.uchleft{
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.usecDiv {
+    flex: 0.5;
+    display: flex;
+}
+.uquanHandler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.uquanHandler span{
+    text-align: left;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 5px;
+}
+.uquanHandler p{
+    text-align: left;
+    color: grey;
+    padding: 0;
+    margin: 0;
+}
+.delAddr{
+    color: gray;
+    font-size: 15px;
+    text-align: left;
+}
+.uchmid{
+    flex: 0.5;
+}
+.uchright{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uchright span {
+    text-align: left;
+    font-weight: 500;
+    color: grey;
+}
+.uchright hr {
+    width: 100%;
+    color: grey;
+}
+.chrightAttr, .chrightValue{
+    display: flex;
+    flex-direction: column;
+}
+.chrightValue span {
+    padding-left: 25px;
+}
+.reviewBtn{
+    color: blueviolet;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0px;
+}
+#review{
+    width: 500px;
+}
+.markGreen{
+    color: rgb(1, 159, 1) !important;
+    font-weight: 500;
+}

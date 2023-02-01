@@ -1,0 +1,51 @@
+
+
+.adminDashboardWrapper{
+    display: flex;
+}
+.adDashLeft{
+    width: 350px;
+    background-color: #FFFFFF;
+    height: calc(100vh - 60px);
+}
+.adDashLeft ul {
+    padding: 0px;
+}
+.adDashLeft ul li svg{
+    margin-right: 20px;
+    stroke-width: 1;
+}
+.adDashLeft ul li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 25px;
+    margin: 8px 2px;
+    font-size: 18px;
+    border-left: 8px solid #FFFFFF;
+    border-right: 8px solid #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s opacity ease-in-out;
+    text-align: left;
+}
+.activeList{
+    border-left: 8px solid #35919b !important;
+    border-right: 8px solid #FFFFFF !important;
+    border-radius: 5px;
+    background-color: #dafbff;
+    font-weight: 500;
+}
+.activeList svg{
+    stroke-width: 2 !important;
+}
+
+.adDashRight{
+    width: calc(100vw - 350px);
+    background-color: #F2F2F2;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
