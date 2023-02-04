@@ -90,7 +90,7 @@ export default function Home() {
                     <div className="homeAction">
                         <p>Filter by location</p>
                         <select id="dropdown" onChange={handleChange}>
-                            <option value="N/A">Search Nearby Location</option>
+                            <option value="N/A">Search Nearby Stores</option>
                             {
                                 userAddress.map((data) => {
                                     return (

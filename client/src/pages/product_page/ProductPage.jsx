@@ -138,7 +138,7 @@ export default function ProductPage(props) {
                             </div>
                             <div className="productDright">
                                 <h2>{product.product_name}</h2>
-                                <span>{product.product_category}</span>
+                                <span>{product.product_category=="electronic" ? "Electronic & Accessories": (product.product_category=="homedecoration" ? "Home & Decorations" : "Other")}</span>
                                 <h3>Price : ${product.product_price}/-</h3>
                                 <p>{product.product_description}</p>
                                 <div className="prodActionDiv">

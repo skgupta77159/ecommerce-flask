@@ -26,15 +26,15 @@ formatter = RequestFormatter(
 
 
 # add console handler to the root logger
-# logger = logging.getLogger()
-# consoleHandler = logging.StreamHandler()
-# consoleHandler.setFormatter(formatter)
-# logger.addHandler(consoleHandler)
+logger = logging.getLogger()
+consoleHandler = logging.StreamHandler()
+consoleHandler.setFormatter(formatter)
+logger.addHandler(consoleHandler)
 
 # add file handler to the root logger
-# fileHandler = logging.FileHandler("logs.log")
-# fileHandler.setFormatter(formatter)
-# logger.addHandler(fileHandler)
+fileHandler = logging.FileHandler("logs.log")
+fileHandler.setFormatter(formatter)
+logger.addHandler(fileHandler)
 
 
 def create_app():

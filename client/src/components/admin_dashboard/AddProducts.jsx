@@ -68,26 +68,27 @@ export default function AddProducts() {
                         <div className="adDashRightTop">
                             <h2>Products</h2>
                         </div>
-                        <div className="addProductDiv" onSubmit={handleAddClick}>
-                            <form className="productDiv">
-                                <input type="text" placeholder='Product name' required name="product_name" value={product.product_name} onChange={handleInputChange} />
-                                <input type="text" placeholder='Product price' required name="product_price" value={product.product_price} onChange={handleInputChange} />
-                                <input type="text" placeholder='About product' required name="product_description" value={product.product_description} onChange={handleInputChange} />
-                                <input type="text" placeholder='Product image' required name="product_image" value={product.product_image} onChange={handleInputChange} />
-                                <select name="category" id="productCategory" onChange={e => handleSelectChange(e)} value={product.product_category}>
-                                    <option value="homedecoration">Home & Decorations</option>
-                                    <option value="electronic">Electronic & Accessories</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <button className='addProductBtn' disabled={isLoading} type="submit">{isLoading ? "Adding...": "Add"}</button>
-                            </form>
-                        </div>
+
                         <div className="allProducts">
+                            <div className="addProductDiv" onSubmit={handleAddClick}>
+                                <form className="productDiv">
+                                <input type="text" placeholder='Product image' required name="product_image" value={product.product_image} onChange={handleInputChange} />
+                                    <input type="text" placeholder='Product name' required name="product_name" value={product.product_name} onChange={handleInputChange} />
+                                    <input type="text" placeholder='Product price' required name="product_price" value={product.product_price} onChange={handleInputChange} />
+                                    <input type="text" placeholder='About product' required name="product_description" value={product.product_description} onChange={handleInputChange} />
+                                    <select name="category" id="productCategory" onChange={e => handleSelectChange(e)} value={product.product_category}>
+                                        <option value="homedecoration">Home & Decorations</option>
+                                        <option value="electronic">Electronic & Accessories</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <button className='addProductBtn' disabled={isLoading} type="submit">{isLoading ? "Adding..." : "Add"}</button>
+                                </form>
+                            </div>
                             {
-                                productLoading ? <CircularProgress/> :
-                                allProducts.map((item) => {
-                                    return <ProductCard value={item} getProd={getProd} public={false}/>
-                                })
+                                productLoading ? <CircularProgress /> :
+                                    allProducts.map((item) => {
+                                        return <ProductCard value={item} getProd={getProd} public={false} />
+                                    })
                             }
                         </div>
                     </>

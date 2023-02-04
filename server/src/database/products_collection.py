@@ -101,7 +101,7 @@ def get_single_product(product_id):
 # Return all random product
 def get_all_product():
     try:
-        result = product_collection.find()
+        result = product_collection.find().limit(30)
         if result:
             products = []
             for item in result:
@@ -145,7 +145,7 @@ def get_search_product(query):
                 storeId.append(str(i["_id"]))
 
         result = product_collection.find(
-            {"$text": {"$search": query["product_name"]}}).limit(10)
+            {"$text": {"$search": query["product_name"]}}).limit(30)
         product_list = []
         store_list = []
         if result:

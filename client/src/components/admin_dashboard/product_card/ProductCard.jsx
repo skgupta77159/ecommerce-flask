@@ -55,7 +55,7 @@ export default function ProductCard(props) {
         <div className={props.public ? "productWrapper fullWidth" : "productWrapper"} onClick={openProductPage}>
             <img src={props.value.product_image} alt="product image" />
             <h3 className='productName'>{props.value.product_name}</h3>
-            <p className='productCateg'>{props.value.product_category}</p>
+            <p className='productCateg'>{props.value.product_category=="electronic" ? "Electronic & Accessories": (props.value.product_category=="homedecoration" ? "Home & Decorations" : "Other")}</p>
             {props.public ? null : <p className='productCateg'>{`(${props.value._id})`}</p>}
             <p className='productDesc'>{props.value.product_description}</p>
             <span className='productPrice'>{`Price: $${props.value.product_price}`}</span>
